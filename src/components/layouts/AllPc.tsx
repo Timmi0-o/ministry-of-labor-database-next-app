@@ -111,10 +111,10 @@ export const AllPc = () => {
 				</div>
 			</div>
 			<div
-				className={`grid duration-200 ${
+				className={`grid duration-300 ease-in-out ${
 					data?.length <= 1 ? 'grid-cols-3' : 'grid-cols-4'
 				} gap-[3vw] ${
-					data?.length === 0 ? 'ml-[100%] absolute opacity-0' : ''
+					data?.length ? '' : 'mt-[-50%] opacity-0 fixed select-none'
 				}`}
 			>
 				{data?.map((pc: PC, i: number) => (

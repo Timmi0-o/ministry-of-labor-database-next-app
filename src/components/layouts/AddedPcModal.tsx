@@ -108,7 +108,7 @@ export const AddedPcModal = ({ addedPc, setAddedPc }: AddedPcModalProps) => {
 					/>
 					<Input state={cpu} setState={setCpu} placeholder='Процессор' />
 					<Input state={gpu} setState={setGpu} placeholder='Видеокарта' />
-					<Input state={ram} setState={setRam} placeholder='RAM' />
+					<Input state={ram} setState={setRam} placeholder='RAM (кол-во)' />
 					{/* ВНУТРЕННЯЯ ПАМЯТЬ */}
 					{roms.map((rom, i) => (
 						<div className='flex gap-[0.3vw] items-center' key={i}>
@@ -140,7 +140,7 @@ export const AddedPcModal = ({ addedPc, setAddedPc }: AddedPcModalProps) => {
 							<Input
 								state={newRomTitle}
 								setState={setNewRomTitle}
-								placeholder='ROM'
+								placeholder='ROM (название)'
 							/>
 							<div className='w-[4vw]'>
 								<Input

@@ -31,7 +31,7 @@ export const SideBar = () => {
 	]
 
 	return (
-		<aside className='w-[15vw] h-fit bg-white rounded-[0.5vw] shadow-md border-[0.1vw] border-[#00000024]'>
+		<aside className='h-fit rounded-[0.5vw] shadow-md border-[0.1vw] border-[#00000024]'>
 			{/* TITLE */}
 			<h1 className='flex items-center justify-center gap-[0.5vw] font-bold text-[1.5vw] text-[#2a2a2a] text-center mt-[0.4vw] tracking-[0.2vw]'>
 				<CiSettings className='size-[1.7vw]' />

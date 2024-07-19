@@ -1,3 +1,4 @@
+import { FilterListWorked } from '@/components/layouts/FilterListWorked'
 import { Header } from '@/components/layouts/Header'
 import { SideBar } from '@/components/layouts/SideBar'
 import type { Metadata } from 'next'
@@ -21,7 +22,10 @@ export default function RootLayout({
 			<body className={montserrat.className}>
 				<Header />
 				<div className='relative flex justify-between mt-[2.5vh] w-[95vw] mx-auto'>
-					<SideBar />
+					<div className='flex flex-col gap-[1vw] w-[15vw] '>
+						<SideBar />
+						<FilterListWorked />
+					</div>
 					{children}
 				</div>
 			</body>
